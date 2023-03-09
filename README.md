@@ -4,5 +4,5 @@
 ##№ Функционал приложения:
 1. Наличие стартовой заметки при первом запуске приложения. После ее удаления она не появится при последующих запусках.
 <p align="center">
-  ![](https://github.com/ivan-v-ivanov/NotesApp/blob/main/content/first%20note.gif)
+  <img src="[demo.gif](https://github.com/ivan-v-ivanov/NotesApp/blob/main/content/first%20note.gif)" alt="animated" />
 <p>
