@@ -14,13 +14,13 @@
   <img src="https://github.com/ivan-v-ivanov/NotesApp/blob/main/content/first%20note.gif" alt="first note" />
 </p>
 
-Сохранение новых заметок. Можно добавить название, текст и изображения заметки. Любой контект можно изменять.
+Сохранение новых заметок. Можно добавить название, текст и изображение. Любой контент можно изменять при повторном входе в окно редактирвоания заметки.
 
 <p align="center">
   <img src="https://github.com/ivan-v-ivanov/NotesApp/blob/main/content/save%20note.gif" alt="save note" />
 </p>
 
-Проверка на наличие текстового контекта в заметке. При попытке сохранения пустой заметки появится всплывающее окно.
+Проверка на наличие текстового контента в заметке. При попытке сохранения пустой заметки появится всплывающее окно.
 
 <p align="center">
   <img src="https://github.com/ivan-v-ivanov/NotesApp/blob/main/content/empty%20note.gif" alt="empty note" />
