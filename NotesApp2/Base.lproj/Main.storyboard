@@ -11,13 +11,13 @@
         <!--Заметки-->
         <scene sceneID="y4D-hq-xmu">
             <objects>
-                <tableViewController id="Ykp-jW-0dt" customClass="NoteTableView" customModule="NotesApp2" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Ykp-jW-0dt" customClass="NoteTableView" customModule="NotesApp2_" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="dDn-Xw-olA">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="noteCellID" id="xN9-yj-VWW" customClass="NoteCell" customModule="NotesApp2" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="noteCellID" id="xN9-yj-VWW" customClass="NoteCell" customModule="NotesApp2_" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="50" width="393" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xN9-yj-VWW" id="gue-oY-eUZ">
@@ -97,7 +97,7 @@
         <!--Note Detail View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="NoteDetailViewController" customModule="NotesApp2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="NoteDetailViewController" customModule="NotesApp2_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -108,22 +108,47 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" allowsEditingTextAttributes="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5V3-Ji-1gk">
-                                <rect key="frame" x="20" y="206.66666666666669" width="353" height="542.33333333333326"/>
+                                <rect key="frame" x="20" y="206.66666666666666" width="353" height="307.33333333333337"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="lwI-TS-FA6"/>
+                                </constraints>
                                 <attributedString key="attributedText"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5n-qC-bRl">
+                                <rect key="frame" x="90" y="734" width="213" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="9NQ-aW-Scn"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Добавить изображение"/>
+                                <connections>
+                                    <action selector="loadImage" destination="BYZ-38-t0r" eventType="touchUpInside" id="Arm-qh-gNN"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="PZK-as-sab">
+                                <rect key="frame" x="20" y="534" width="353" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="VPn-fn-8hY"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="5V3-Ji-1gk" firstAttribute="top" secondItem="EML-nO-p3l" secondAttribute="bottom" constant="20" id="1if-Fb-3Rx"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5V3-Ji-1gk" secondAttribute="trailing" constant="20" id="2Px-EF-JVL"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EML-nO-p3l" secondAttribute="trailing" constant="20" id="Hms-Ak-kpy"/>
                             <constraint firstItem="EML-nO-p3l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="QFA-TZ-Fnx"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="5V3-Ji-1gk" secondAttribute="bottom" constant="20" id="QkX-eC-pA7"/>
                             <constraint firstItem="5V3-Ji-1gk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Uua-DZ-wbu"/>
+                            <constraint firstItem="PZK-as-sab" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="W0R-yM-ds0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PZK-as-sab" secondAttribute="trailing" constant="20" id="YFd-7k-LKM"/>
                             <constraint firstItem="EML-nO-p3l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="hSJ-gR-4pT"/>
-                            <constraint firstItem="5V3-Ji-1gk" firstAttribute="top" secondItem="EML-nO-p3l" secondAttribute="bottom" constant="20" id="lFQ-ez-OnI"/>
+                            <constraint firstItem="u5n-qC-bRl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ng4-WD-hA8"/>
+                            <constraint firstItem="PZK-as-sab" firstAttribute="top" secondItem="5V3-Ji-1gk" secondAttribute="bottom" constant="20" id="sHR-IA-Akt"/>
+                            <constraint firstItem="u5n-qC-bRl" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="yZq-WE-5Uy"/>
+                            <constraint firstItem="u5n-qC-bRl" firstAttribute="top" secondItem="PZK-as-sab" secondAttribute="bottom" constant="20" id="zu4-r5-EAM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="OJq-Jg-n4w">
@@ -140,6 +165,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="imageView" destination="PZK-as-sab" id="vfJ-yy-oaz"/>
                         <outlet property="noteContent" destination="5V3-Ji-1gk" id="LJu-l1-vJK"/>
                         <outlet property="noteTitle" destination="EML-nO-p3l" id="fYL-Hx-yY5"/>
                     </connections>

@@ -11,7 +11,7 @@
 		4250961229A45DC300CFDBDB /* NoteTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4250961129A45DC300CFDBDB /* NoteTableView.swift */; };
 		4250961429A4611700CFDBDB /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4250961329A4611700CFDBDB /* Note.swift */; };
 		4250961629A5BF8F00CFDBDB /* AdditionalModules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4250961529A5BF8F00CFDBDB /* AdditionalModules.swift */; };
-		4250961929A5C44800CFDBDB /* Proton in Frameworks */ = {isa = PBXBuildFile; productRef = 4250961829A5C44800CFDBDB /* Proton */; };
+		4288000E29B5C7B9002AF010 /* StartNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4288000D29B5C7B9002AF010 /* StartNote.swift */; };
 		42E9186829A4544200DC8FC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9186729A4544200DC8FC9 /* AppDelegate.swift */; };
 		42E9186A29A4544200DC8FC9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9186929A4544200DC8FC9 /* SceneDelegate.swift */; };
 		42E9186C29A4544200DC8FC9 /* NoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E9186B29A4544200DC8FC9 /* NoteDetailViewController.swift */; };
@@ -26,7 +26,8 @@
 		4250961129A45DC300CFDBDB /* NoteTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableView.swift; sourceTree = "<group>"; };
 		4250961329A4611700CFDBDB /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		4250961529A5BF8F00CFDBDB /* AdditionalModules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalModules.swift; sourceTree = "<group>"; };
-		42E9186429A4544200DC8FC9 /* NotesApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotesApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4288000D29B5C7B9002AF010 /* StartNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartNote.swift; sourceTree = "<group>"; };
+		42E9186429A4544200DC8FC9 /* NotesApp2+.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NotesApp2+.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		42E9186729A4544200DC8FC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		42E9186929A4544200DC8FC9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		42E9186B29A4544200DC8FC9 /* NoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailViewController.swift; sourceTree = "<group>"; };
@@ -42,7 +43,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4250961929A5C44800CFDBDB /* Proton in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,7 +60,7 @@
 		42E9186529A4544200DC8FC9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				42E9186429A4544200DC8FC9 /* NotesApp2.app */,
+				42E9186429A4544200DC8FC9 /* NotesApp2+.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,15 +71,16 @@
 				4250961529A5BF8F00CFDBDB /* AdditionalModules.swift */,
 				42E9186729A4544200DC8FC9 /* AppDelegate.swift */,
 				42E9186929A4544200DC8FC9 /* SceneDelegate.swift */,
-				42E9186B29A4544200DC8FC9 /* NoteDetailViewController.swift */,
 				42E9186D29A4544200DC8FC9 /* Main.storyboard */,
+				4250961329A4611700CFDBDB /* Note.swift */,
+				4288000D29B5C7B9002AF010 /* StartNote.swift */,
 				4250960D29A45D9200CFDBDB /* NoteCell.swift */,
 				4250961129A45DC300CFDBDB /* NoteTableView.swift */,
+				42E9186B29A4544200DC8FC9 /* NoteDetailViewController.swift */,
+				42E9187029A4544200DC8FC9 /* NotesApp2.xcdatamodeld */,
 				42E9187329A4544400DC8FC9 /* Assets.xcassets */,
 				42E9187529A4544400DC8FC9 /* LaunchScreen.storyboard */,
 				42E9187829A4544400DC8FC9 /* Info.plist */,
-				42E9187029A4544200DC8FC9 /* NotesApp2.xcdatamodeld */,
-				4250961329A4611700CFDBDB /* Note.swift */,
 			);
 			path = NotesApp2;
 			sourceTree = "<group>";
@@ -87,9 +88,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		42E9186329A4544200DC8FC9 /* NotesApp2 */ = {
+		42E9186329A4544200DC8FC9 /* NotesApp2+ */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 42E9187B29A4544400DC8FC9 /* Build configuration list for PBXNativeTarget "NotesApp2" */;
+			buildConfigurationList = 42E9187B29A4544400DC8FC9 /* Build configuration list for PBXNativeTarget "NotesApp2+" */;
 			buildPhases = (
 				42E9186029A4544200DC8FC9 /* Sources */,
 				42E9186129A4544200DC8FC9 /* Frameworks */,
@@ -99,12 +100,11 @@
 			);
 			dependencies = (
 			);
-			name = NotesApp2;
+			name = "NotesApp2+";
 			packageProductDependencies = (
-				4250961829A5C44800CFDBDB /* Proton */,
 			);
 			productName = NotesApp2;
-			productReference = 42E9186429A4544200DC8FC9 /* NotesApp2.app */;
+			productReference = 42E9186429A4544200DC8FC9 /* NotesApp2+.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -122,7 +122,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 42E9185F29A4544200DC8FC9 /* Build configuration list for PBXProject "NotesApp2" */;
+			buildConfigurationList = 42E9185F29A4544200DC8FC9 /* Build configuration list for PBXProject "NotesApp2+" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -132,13 +132,12 @@
 			);
 			mainGroup = 42E9185B29A4544200DC8FC9;
 			packageReferences = (
-				4250961729A5C44800CFDBDB /* XCRemoteSwiftPackageReference "proton" */,
 			);
 			productRefGroup = 42E9186529A4544200DC8FC9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				42E9186329A4544200DC8FC9 /* NotesApp2 */,
+				42E9186329A4544200DC8FC9 /* NotesApp2+ */,
 			);
 		};
 /* End PBXProject section */
@@ -164,6 +163,7 @@
 				42E9186C29A4544200DC8FC9 /* NoteDetailViewController.swift in Sources */,
 				4250961229A45DC300CFDBDB /* NoteTableView.swift in Sources */,
 				4250961429A4611700CFDBDB /* Note.swift in Sources */,
+				4288000E29B5C7B9002AF010 /* StartNote.swift in Sources */,
 				42E9186829A4544200DC8FC9 /* AppDelegate.swift in Sources */,
 				4250961629A5BF8F00CFDBDB /* AdditionalModules.swift in Sources */,
 				4250960E29A45D9200CFDBDB /* NoteCell.swift in Sources */,
@@ -315,6 +315,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J93RDM25FG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NotesApp2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -322,12 +323,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ivanvivanov.NotesApp2;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ivanvivanov.NotesApp2-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -342,6 +344,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = J93RDM25FG;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NotesApp2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -349,12 +352,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ivanvivanov.NotesApp2;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ivanvivanov.NotesApp2-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -365,7 +369,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		42E9185F29A4544200DC8FC9 /* Build configuration list for PBXProject "NotesApp2" */ = {
+		42E9185F29A4544200DC8FC9 /* Build configuration list for PBXProject "NotesApp2+" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				42E9187929A4544400DC8FC9 /* Debug */,
@@ -374,7 +378,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		42E9187B29A4544400DC8FC9 /* Build configuration list for PBXNativeTarget "NotesApp2" */ = {
+		42E9187B29A4544400DC8FC9 /* Build configuration list for PBXNativeTarget "NotesApp2+" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				42E9187C29A4544400DC8FC9 /* Debug */,
@@ -384,25 +388,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		4250961729A5C44800CFDBDB /* XCRemoteSwiftPackageReference "proton" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/rajdeep/proton/";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		4250961829A5C44800CFDBDB /* Proton */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 4250961729A5C44800CFDBDB /* XCRemoteSwiftPackageReference "proton" */;
-			productName = Proton;
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		42E9187029A4544200DC8FC9 /* NotesApp2.xcdatamodeld */ = {

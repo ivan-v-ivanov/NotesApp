@@ -1,9 +1,3 @@
-//
-//  SceneDelegate.swift
-//  NotesApp2
-//
-//  Created by Ivan Ivanov on 21.02.2023.
-//
 
 import UIKit
 

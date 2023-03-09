@@ -1,9 +1,5 @@
-//
-//  NoteCell.swift
-//  NotesApp2
-//
-//  Created by Ivan Ivanov on 21.02.2023.
-//
+// Note Cell Outlets
+// Note Title and Note Content fields
 
 import UIKit
 
