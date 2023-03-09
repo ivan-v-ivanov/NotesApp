@@ -17,7 +17,7 @@
 Сохранение новых заметок. Можно добавить название, текст и изображение. Любой контент можно изменять при повторном входе в окно редактирвоания заметки.
 
 <p align="center">
-  <img src="https://github.com/ivan-v-ivanov/NotesApp/blob/main/content/save%20note.gif" alt="save note" />
+  <img src="https://github.com/ivan-v-ivanov/NotesApp/blob/main/content/save%20notes.gif" alt="save notes" />
 </p>
 
 Проверка на наличие текстового контента в заметке. При попытке сохранения пустой заметки появится всплывающее окно.
